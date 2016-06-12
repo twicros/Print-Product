@@ -1,0 +1,22 @@
+{
+  "name": "www",
+  "description": "",
+  "main": "",
+  "authors": [
+    "twicros <twicros@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4"
+  }
+}
