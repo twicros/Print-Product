@@ -12,6 +12,7 @@ h3 {
 	font-size: 24px;
 }
 
+
 /*=======================header=========================*/
 
 header div.menu {
@@ -327,6 +328,7 @@ html#ecwid_html body#ecwid_body div.ecwid-minicart-caption:hover{
 
 section.catalog .container .row {
 	margin-left: 0;
+	margin-right: 0;
 }
 section.catalog .container .cat-margin{
 	margin-bottom: 20px;
@@ -434,9 +436,93 @@ section.how-to-buy .container .row div.payment-bg h3{
 	padding-top: 20px;
 }
 
+
+
+/*==============================testimonials====================================*/
+
+section.testimonials > .container{
+	padding: 0;
+	margin-top: 80px;
+}
+
+section.testimonials > .container h2{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+section.testimonials .carousel-inner > .item {
+	min-height: 242px;
+}
+
+section.testimonials .carousel-inner > .item .avatar {
+	text-align: right;
+}
+section.testimonials .carousel-inner > .item .avatar img{
+	width: 60%;
+	margin-top: 25px;
+}
+section.testimonials .carousel-inner > .item .testimonial-caption{
+	display: table;
+	height: 240px;
+}
+
+section.testimonials .carousel-inner > .item .carousel-caption{
+	position: relative;
+	left: 0;
+	top: 0;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding-right: 14%;
+	font-style: italic;
+	color: #13181c;
+	text-shadow: none;
+}
+
+section.testimonials .carousel-control.left,
+section.testimonials .carousel-control.right{
+	background-image: none;
+}
+
+section.testimonials .carousel-control.left span,
+section.testimonials .carousel-control.right span{
+	margin-top: 100px;
+	color: #869ca7;
+	text-shadow: none;
+	transition: all .5s;
+}
+
+section.testimonials .carousel-control.left span:hover,
+section.testimonials .carousel-control.right span:hover{
+	color: #8daab9;
+	transition: all .5s;
+}
+
+
+/*indicators*/
+section.testimonials .carousel-indicators{
+	bottom: 0;
+}
+
+section.testimonials .carousel-indicators li {
+	border: 1px solid #869ca7;
+	width: 16px;
+	height: 16px;
+}
+
+section.testimonials .carousel-indicators .active{
+	background-color: #869ca7;
+	width: 16px;
+	height: 16px;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	section.testimonials .carousel-inner > .item .avatar img{
+		width: 60%;
+		margin-top: 35px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -455,6 +541,11 @@ section.how-to-buy .container .row div.payment-bg h3{
 	section.how-to-buy .container .row div.payment-bg{
 		font-size: 14px;
 	}
+	section.testimonials .carousel-inner > .item .avatar img{
+		width: 60%;
+		margin-top: 72px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -474,6 +565,18 @@ section.how-to-buy .container .row div.payment-bg h3{
 		font-size: 16px;
 		float: none;
     	margin: 0 auto;
+	}
+	section.testimonials .carousel-inner > .item .avatar img{
+		width: 30%;
+		margin-top: 0px;
+	}
+	section.testimonials .carousel-inner > .item .avatar {
+	text-align: center;
+	}
+	section.testimonials .carousel-inner > .item .carousel-caption {
+		text-align: center;
+		padding-right: 0;
+		padding-top: 0;
 	}
 }
 
@@ -497,6 +600,10 @@ section.how-to-buy .container .row div.payment-bg h3{
 	section.how-to-buy .container .row div.payment-bg h3{
 		padding-top: 5px;
 		margin-bottom: 5px;
+	}
+	section.testimonials .carousel-control.left span,
+	section.testimonials .carousel-control.right span{
+		margin-top: 32px;
 	}
 }
 
