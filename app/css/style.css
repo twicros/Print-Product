@@ -502,7 +502,7 @@ section.testimonials .carousel-control.right span:hover{
 
 /*indicators*/
 section.testimonials .carousel-indicators{
-	bottom: 0;
+	bottom: -20px;
 }
 
 section.testimonials .carousel-indicators li {
