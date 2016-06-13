@@ -374,6 +374,66 @@ section.catalog .container .cat-ras-3d-pans {
 	background: url(../img/ras-3d-pans.jpg) center no-repeat;
 }
 
+
+/*======================================how to buy======================================*/
+
+section.how-to-buy{
+	margin-top: 80px;
+}
+
+section.how-to-buy .container{
+	max-width: 968px;
+	padding: 0;
+}
+
+section.how-to-buy .container .row {
+	margin: 0;
+}
+
+section.how-to-buy .container h2 {
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+section.how-to-buy .container .how-to-img {
+	background: url(../img/how-to-buy.png) center no-repeat;
+	height: 313px;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+section.how-to-buy .container .row div {
+	text-align: center;
+	padding-top: 10px;
+}
+
+section.how-to-buy .container .row div.delivery-bg,
+section.how-to-buy .container .row div.payment-bg{
+	text-align: left;
+	height: 176px;
+	width: 100%;
+	padding-left: 20px;
+	padding-top: 0;
+	margin-top: 40px;
+	max-width: 476px;
+}
+
+section.how-to-buy .container .row div.delivery-bg{
+	background: url(../img/delivery-bg.png) right no-repeat;
+}
+
+section.how-to-buy .container .row div.payment-bg{
+	background: url(../img/payment-bg.png) right no-repeat;
+}
+
+section.how-to-buy .container .row div.delivery-bg h3,
+section.how-to-buy .container .row div.payment-bg h3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -388,6 +448,13 @@ section.catalog .container .cat-ras-3d-pans {
 		float: none;
     	margin: 0 auto;
 	}
+	section.how-to-buy .container .how-to-img {
+		height: 257px;
+	}
+	section.how-to-buy .container .row div.delivery-bg,
+	section.how-to-buy .container .row div.payment-bg{
+		font-size: 14px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -399,6 +466,15 @@ section.catalog .container .cat-ras-3d-pans {
 		float: none;
     	margin: 0 auto;
 	}
+	section.how-to-buy .container .how-to-img {
+		height: 200px;
+	}
+	section.how-to-buy .container .row div.delivery-bg,
+	section.how-to-buy .container .row div.payment-bg{
+		font-size: 16px;
+		float: none;
+    	margin: 0 auto;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -406,6 +482,21 @@ section.catalog .container .cat-ras-3d-pans {
 	section.catalog .container .category {
 		float: none;
     	margin: 0 auto;
+	}
+	section.how-to-buy .container .how-to-img {
+			height: 126px;
+	}
+	section.how-to-buy .container .row div {
+		font-size: 14px;
+	}
+	section.how-to-buy .container .row div.delivery-bg,
+	section.how-to-buy .container .row div.payment-bg{
+		font-size: 14px;
+	}
+	section.how-to-buy .container .row div.delivery-bg h3,
+	section.how-to-buy .container .row div.payment-bg h3{
+		padding-top: 5px;
+		margin-bottom: 5px;
 	}
 }
 
