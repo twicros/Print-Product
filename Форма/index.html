@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sendmail example</title>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./sendmail.js"></script>
+</head>
+
+<form method="post" action="/sendmail.php" id="contactform">
+    <div>
+        Name:<br />
+        <input name="name" type="text" class="name" size="30" maxlength="30" />
+    </div>
+    <div>
+        E-mail:<br />
+        <input name="email" type="email" class="email" size="30" maxlength="30" />
+    </div>
+    <div>
+        Phone:<br />
+        <input name="phone" type="tel" class="phone" size="30" maxlength="16" />
+    </div>
+    <div>
+        Message:<br />
+        <textarea name="message_text" cols="24" rows="4" class="message_text"></textarea>
+    </div>
+    <input type="submit" class="send_message" value="Отправить сообщение" />
+</form>
+
+</body>
+</html>

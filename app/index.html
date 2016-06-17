@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -30,7 +31,6 @@
                         <div class="logo">
                             <a class="navbar-brand" href="/">
                                 <img src="img/logo.png" alt="Print Product">
-                                <p class="description">Всё для 3D&ndash;печати</p>
                             </a>
                         </div>
                     </div>
@@ -73,17 +73,50 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li>
+                                <div id="my-search-9339076"></div>
+                                <div>
+                                <script type="text/javascript" src="https://app.ecwid.com/script.js?9339076&data_platform=code&data_date=2016-06-15" charset="utf-8"></script>
+                                <script type="text/javascript"> xSearch("id=my-search-9339076"); </script>
+                                </div>
+                            </li>
                             <li role="separator" class="divider"></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" class="phone">8 (800) 700-48-75</a>
+                                <button type="button" class="phone" data-toggle="modal" data-target="#myModal">8 (800) 700-48-75</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <h4 class="modal-title" id="myModalLabel">8 (800) 700-48-75</h4>
+                                        <p> Режим работы операторов пн-пт с 9:00 до 18:00, <br> cуббота с 11.00-16.00 </p>
+                                        <form method="POST" action="applicationhead.php" id="callback" name="callback">
+                                            <label for="applicationTelephone">Введите ваш номер телефона:</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                                <input type="tel" class="form-control" placeholder="Номер телефона" aria-describedby="basic-addon1" data-inputmask="'mask': '+7(999) 999-99-99'" name="telephonehead" id="applicationTelephoneHead" maxlength="17">
+                                            </div>
+                                            <button type="submit" class="btn" form="callback">Заказать звонок</button>
+                                        </form>
+
+
+
+
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                             </li>
                             <li>
                                 <div id="my-cart-9339076"></div>
                                 <div>
                                     <script type="text/javascript" src="https://app.ecwid.com/script.js?9339076&data_platform=code&data_date=2016-06-11" charset="utf-8"></script>
-                                    <!-- remove layout parameter if you want to position minicart yourself -->
                                     <script type="text/javascript"> xMinicart("layout=attachToCategories", "id=my-cart-9339076"); </script>
                                 </div>
                             </li>
@@ -132,7 +165,7 @@
     </section><!-- /.first-screen -->
     <section class="catalog">
         <div class="container">
-            <h2>Выберите категорию каталога:</h2>
+            <h2 id="catalog-head">Выберите категорию каталога:</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="cat-margin">
@@ -140,7 +173,7 @@
                             <div class="cat-3d-printers">
                                 <div class="cat-caption">
                                     <div class="cat-head">
-                                        <h3 id="catalog-head">3D&ndash;принтеры</h3>
+                                        <h3>3D&ndash;принтеры</h3>
                                     </div>
                                 </div>
                                 <div class="category-shadow">
@@ -250,7 +283,7 @@
                     <div class="delivery-bg">
                         <h3>Способы доставки</h3>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-check-circle-o"></i> Самовывоз в Санкт-Петербурге в районе станции метро &laquo;Елизаровская&raquo;</li>
+                            <li><i class="fa fa-check-circle-o"></i> Самовывоз в Санкт-Петербурге из главного офиса или из фирменного магазина</li>
                             <li><i class="fa fa-check-circle-o"></i> Доставка по Санкт-Петербургу в день покупки</li>
                             <li><i class="fa fa-check-circle-o"></i> Доставка по России любой удобной транспортной компанией или курьерской службой</li>
                         </ul>
@@ -260,7 +293,7 @@
                     <div class="payment-bg">
                         <h3>Способы оплаты</h3>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-check-circle-o"></i> Наличными в пункте выдачи в Санкт-Петербурге в районе станции метро &laquo;Елизаровская&raquo;</li>
+                            <li><i class="fa fa-check-circle-o"></i> Наличными в пунктах выдачи в Санкт-Петербурге</li>
                             <li><i class="fa fa-check-circle-o"></i> Безналичный расчет</li>
                             <li><i class="fa fa-check-circle-o"></i> Онлайн оплата при помощи банковской карты или электронных кошельков</li>
                         </ul>
@@ -343,25 +376,27 @@
     <section class="cta">
         <div class="container">
             <h3>Получите <span>бесплатную</span> консультацию от&nbsp;специалиста <nobr>по 3D&ndash;печати</nobr> прямо сейчас</h3>
-            <p>Введите ваш номер телефона:</p>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="Номер телефона" aria-describedby="basic-addon1">
-            </div>
-            <a href="#" class="btn">Позвоните мне</a>
+            <form method="POST" action="application.php" id="application" name="application">
+                <label for="applicationTelephone">Введите ваш номер телефона:</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                    <input type="tel" class="form-control" placeholder="Номер телефона" aria-describedby="basic-addon1" data-inputmask="'mask': '+7(999) 999-99-99'" name="telephone" id="applicationTelephone" maxlength="17">
+                </div>
+                <button type="submit" class="btn" form="application">Получить консультацию</button>
+            </form>
         </div>
     </section><!-- /.cta -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4 footer-logo"> 
+                <div class="col-sm-4 footer-logo"> 
                     <a href="#"><img src="img/footer-logo.png" alt="Print Product"></a>
                     <p><span class="tel">8 (800) 700-48-75</span></p>
                     <div class="soc-icon"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
                     <div class="soc-icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 col-sm-4">
+                <div class="col-sm-4">
                     <nav class="footer-nav">
                         <span>Каталог:</span>
                         <ul class="list-unstyled">
@@ -374,7 +409,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3 col-sm-4">
+                <div class="col-sm-4">
                     <nav class="footer-nav">
                         <span>Print Product</span>
                         <ul class="list-unstyled">
@@ -387,23 +422,18 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="visible-sm-block clearfix"></div>
-                <div class="col-md-3 col-sm-4 footer-address">
-                    <span>Реквизиты:</span>
-                    <address>ООО &laquo;ПринтПродакт&raquo; <nobr>г. Санкт-Петербург</nobr> <nobr>пр-т Елизарова д. 34,</nobr> <nobr>лит. А,</nobr> <nobr>пом. 33</nobr>, бизнес-центр &laquo;KROL&raquo;<br>ИНН: 7811591815</address>
-                </div>
                 <div class="col-md-12 col-sm-4 vova">
                     <p>Разработка сайта &mdash; <a href="#">www.vova.xyz</a></p>
                 </div>
-                    
-              
             </div>
         </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    
 </body>
 </html>
