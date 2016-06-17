@@ -194,10 +194,6 @@ html#ecwid_html body#ecwid_body div.ecwid-minicart-caption:hover{
 	transition: all .5s;
 }
 
-/*popup-z-index*/
-.ecwid-popup{
-	z-index: 5555 !important;
-}
 
 
 /*=======================first screen=========================*/
@@ -695,6 +691,50 @@ footer .container .row div.footer-address address{
 
 section.cta .container .input-group .form-control {
 	font-size: 24px;
+}
+
+/*==========================================================================
+==============================catalog-page================================
+==========================================================================*/
+
+section.catalog-box .container{
+	max-width: 968px;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-head{
+	font-family: Roboto, sans-serif;
+	font-size: 36px !important;
+	text-align: center !important;
+}
+
+/*auth*/
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-auth {
+	margin: 40px 0 0 0 !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowser-auth-anonim,
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowser-auth-logged {
+	font-family: Roboto, sans-serif;
+	margin-right: 0 !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid a {
+	color: #f5a800 !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid a:hover{
+	text-decoration: underline !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid-favorite-menu div.ecwid-favorite-image svg {
+	fill: #f5a800 !important;
+}
+
+/*heading*/
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-head {
+	margin-bottom: 30px !important;
 }
 
 
