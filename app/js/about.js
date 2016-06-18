@@ -1,11 +1,5 @@
 $(function () {
-	$('section.testimonials .carousel').carousel({
-		interval: false
-	});
-
-
-
-	$("a[href^='#']").on('click', function(e) {
+	$("a[href^='/about.html#']").on('click', function(e) {
 
 	   // prevent default anchor click behavior
 	   e.preventDefault();

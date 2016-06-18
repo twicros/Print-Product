@@ -9,7 +9,7 @@ gulp.task('connect', function() {
 		livereload: true,
 		port: 8888
 	});
-	opn('http://localhost:8888/catalog.html')
+	opn('http://localhost:8888/about.html')
 });
 
 // Работа с html
