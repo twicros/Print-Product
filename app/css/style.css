@@ -920,14 +920,22 @@ section.about .about-block {
 	margin-bottom: 40px;
 }
 
-section.about .carousel img{
-	max-width: 219px;
-	margin: 0 auto;
+section.about .row {
+	margin: 0;
 }
 
-section.about .carousel-indicators {
-	bottom: -40px;
+section.about .elastislide-horizontal nav span.elastislide-prev{
+	background: #869ca7 url(../img/nav.png) no-repeat scroll 3px 3px;
 }
+
+section.about .elastislide-horizontal nav span.elastislide-next{
+	background: #869ca7 url(../img/nav.png) no-repeat scroll 4px -17px;
+}
+
+section.about .elastislide-wrapper {
+	box-shadow: none;
+}
+
 
 /*=========================================================================================
 =====================================  rules  ===========================================

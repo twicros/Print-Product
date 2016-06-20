@@ -24,6 +24,15 @@ $(function () {
 	     });
 
 	});
+
+	 
+	$('.nav a').on('click', function(){
+    	$('.navbar-toggle').click() //Скрываем мобильное меню по клику на ссылке
+	});
+
+	$('.nav #my-cart-9339076').on('click', function(){
+    	$('.navbar-toggle').click() //Скрываем мобильное меню по клику на корзине
+	});
 	
 });
 
