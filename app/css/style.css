@@ -900,6 +900,28 @@ section.about{
 
 section.about .container {
 	max-width: 968px;
+	padding: 0;
+}
+
+section.about .container .about-fs{
+	position: relative;
+	height: 644px;
+	background: url(../img/about-fs.jpg);
+}
+
+section.about .container .about-fs-text{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	bottom: 0;
+}
+
+section.about .container .about-fs-text p{
+	padding-left: 15px;
+	padding-right: 15px;
+	/*font-size: 24px;*/
 }
 
 section.about h1,
@@ -908,20 +930,53 @@ section.about h2 {
 	padding-left: 15px;
 	margin-bottom: 20px;
 }
-
-section.about img{
-	width: 100%;
-	height: 100%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+section.about h3,
+section.about h4{
+	padding-left: 20px;
 }
 
+
 section.about .about-block {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 section.about .row {
 	margin: 0;
+}
+
+section.about .row .no-p {
+	padding: 0;
+}
+
+section.about .row .no-p img{
+	width: 100%;
+}
+
+section.about .row .no-p p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.about .row .about-tech {
+	color: #fff;
+	background: #8e74d5;
+	height: 413px;
+}
+
+section.about .row .about-tech.exp {
+	background: #01b983;
+	height: 272px;
+}
+
+section.about .row .about-tech.tels {
+	background: #dee3e6;
+	height: 479px;
+	color: #13181c;
+}
+
+section.about .row .about-contacts h2{
+	text-align: center;
 }
 
 section.about .elastislide-horizontal nav span.elastislide-prev{
@@ -994,6 +1049,22 @@ section.thx .container{
 	}
 	section.about img{
 	    margin-top: 20px;
+	}
+	section.about .container .about-fs{
+	background: url(../img/about-fs.jpg) right;
+	}
+	section.about .row .about-tech {
+	height: auto;
+	}
+	section.about .row .no-p {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	section.about .row .about-tech.exp {
+		height: auto;
+	}
+	section.about .row .about-tech.tels {
+		height: auto;
 	}
 
 }
@@ -1081,6 +1152,9 @@ section.thx .container{
 	}
 	section.cta .container .input-group .form-control {
 	font-size: 16px;
+	}
+	section.about .container .about-fs{
+	background: url(../img/about-fs.jpg) left;
 	}
 }
 
