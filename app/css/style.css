@@ -905,17 +905,17 @@ section.about .container {
 
 section.about .container .about-fs{
 	position: relative;
-	height: 644px;
+	height: 629px;
 	background: url(../img/about-fs.jpg);
 }
 
 section.about .container .about-fs-text{
-	position: absolute;
+	/*position: absolute;*/
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	bottom: 0;
+	/*bottom: 0;*/
 }
 
 section.about .container .about-fs-text p{
